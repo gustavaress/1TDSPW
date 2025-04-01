@@ -20,5 +20,19 @@ public class Aluno {
         double mediaFinal;
         mediaFinal = notaCp*0.20 + notaCh*0.20 + notaGs*0.60;
         return mediaFinal;
+
+
+    }
+
+    // Exibir infos
+    public void exibirNotas() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Notas:");
+        System.out.println("Checkpoint: " + notaCp);
+        System.out.println("Challange: " + notaCh);
+        System.out.println("Global Solution: " + notaGs);
+
+        double notaFinal = calcularMedia();
+        System.out.println("Nota final: " + notaFinal);
     }
 }

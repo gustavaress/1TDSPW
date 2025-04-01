@@ -37,8 +37,7 @@ public class Main {
         System.out.println("Challange: " + aluno1.notaCh);
         System.out.println("Global Solution: " + aluno1.notaGs);
 
-        double notaFinal = aluno1.calcularMedia();
-        System.out.println("A nota final do aluno " + aluno1.nome + " é " + notaFinal);
-
+        aluno1.calcularMedia();
+        aluno1.exibirNotas();
     }
 }
