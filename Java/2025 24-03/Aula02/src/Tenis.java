@@ -13,4 +13,10 @@ public class Tenis {
         void aumentarPreco(float porcentagem){
                 preco += preco + porcentagem/100;
         }
+
+        double aplicarDesconto(float porcentagem){
+                double valorComDesconto;
+                valorComDesconto = preco - (preco * porcentagem)/100;
+                return valorComDesconto;
+        }
 }
