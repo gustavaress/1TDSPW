@@ -1,19 +1,24 @@
 public class Aluno {
-    String turma;
     String nome;
-    String rm;
+    double notaCp1;
+    double notaCp2;
+    double notaCp3;
+    double notaCp;
+    double notaCh;
+    double notaGs;
 
-    Notas notas;
 
-    // Construtor que inicializa "notas"
-    public Aluno() {
-        this.notas = new Notas(); // Garante que "notas" nunca seja null
+    // Calcular média CP
+    double calcularCp(){
+        double mediaCp;
+        mediaCp = (notaCp1 + notaCp2 + notaCp3)/3;
+        return mediaCp;
     }
 
-    // Método calcular média
+    // Calcular media final
     double calcularMedia(){
         double mediaFinal;
-        mediaFinal = notas.notaCp*0.20 + notas.notaCh*0.20 + notas.notaGs*0.60;
+        mediaFinal = notaCp*0.20 + notaCh*0.20 + notaGs*0.60;
         return mediaFinal;
     }
 }
