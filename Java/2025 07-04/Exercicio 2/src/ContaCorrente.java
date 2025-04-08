@@ -10,7 +10,7 @@ public class ContaCorrente {
         saldo -= valor;
     }
 
-    void retornarSaldo(double valor){
-
+    double retornarSaldo(){
+        return saldo;
     }
 }
