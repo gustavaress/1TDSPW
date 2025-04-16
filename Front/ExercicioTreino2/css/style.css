@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor-fundo: #29274C;
+    --branco: #ffd3ef;
+    --rosa: #d58ba9;
+    --azul-medio: #29274C;
+    --roxo: #7E52A0;
+    --escuro: #312c31;
+    --pessego: #ffb469;
+}
+
+main {
+    text-align: center;
+}
+
+body {
+    background-color: var(--escuro);
+}
+
+#home {
+    display: block;
+    background-color: var(--cor-fundo);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+#home nav ul li{
+    display: inline-block;
+    margin: 5px;
+}
+
+section {
+    background-color: var(--rosa);
+    margin: 50px;
+    color: var(--escuro);
+    padding: 20px 10px 30px 10px;
+    border-radius: 10px;
+    border: 4px solid var(--roxo);
+    text-align: center;
+    transition: 0.5s;
+}
+
+section:hover {
+    background-color: var(--roxo);
+    margin: 50px;
+    color: var(--escuro);
+    padding: 20px 10px 30px 10px;
+    border-radius: 10px;
+    color: var(--branco);
+    border: 4px solid var(--branco);
+    text-align: center;
+    transition: 0.5s;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+#link-mapa {
+    background-color: var(--azul-medio);
+    display: inline-block;
+    color: var(--branco);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#link-mapa:hover {
+    background-color: var(--branco);
+    display: inline-block;
+    color: var(--escuro);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+section p{
+    margin: 10px;
+}
+
+.nav-link {
+    background-color: var(--rosa);
+    padding: 10px;
+    color: var(--azul-medio);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-link:hover {
+    background-color: var(--roxo);
+    padding: 10px;
+    color: var(--branco);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+
+.voltarTopo {
+    display: inline-block;
+    padding: 10px;
+    margin: 0px auto;
+    background-color: var(--rosa);
+    color: var(--escuro);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.voltarTopo:hover {
+    display: inline-block;
+    padding: 10px;
+    margin: 0px auto;
+    background-color: var(--roxo);
+    color: var(--branco);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+footer {
+    display: block;
+    padding: 2px;
+    text-align: center;
+    margin: 30px auto 0;
+    background: linear-gradient(to left, var(--pessego), var(--roxo));
+    color: var(--escuro);
+}
