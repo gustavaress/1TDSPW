@@ -9,7 +9,7 @@ public class Livro {
 
     //Construtor
     public Livro(){
-        
+        System.out.println("Passei por aqui");
     }
 
     // métodos
