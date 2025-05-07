@@ -24,22 +24,28 @@ public class TesteTamanho {
 
         System.out.println("Dados Segunda Pessoa");
 
-        System.out.println("Digite o nome da primeira pessoa:");
+        System.out.println("Digite o nome da segunda pessoa:");
         String nomePessoa2 = leitor.nextLine();
 
-        System.out.println("Digite a altura da primeira pessoa:");
+        System.out.println("Digite a altura da segunda pessoa:");
         float alturaPessoa2 = Float.parseFloat(leitor.nextLine());
 
-        System.out.println("Digite o peso da primeira pessoa:");
+        System.out.println("Digite o peso da segunda pessoa:");
         float pesoPessoa2 = Float.parseFloat(leitor.nextLine());
 
         Pessoa pessoa1 = new Pessoa(nomePessoa1, alturaPessoa1, pesoPessoa1);
         Pessoa pessoa2 = new Pessoa(nomePessoa2, alturaPessoa2, pesoPessoa2);
 
         if(pessoa1.getPeso() > pessoa2.getPeso()) {
-            System.out.println(pessoa1.getNome() + " é mais pesada que " + pessoa2.getNome());
+            System.out.println(pessoa1.getNome() + " é mais pesado(a) que " + pessoa2.getNome());
         } else {
-            System.out.println(pessoa2.getNome() + " é mais pesada que " + pessoa1.getNome());
+            System.out.println(pessoa2.getNome() + " é mais pesado(a) que " + pessoa1.getNome());
+        }
+
+        if(pessoa1.getAltura() > pessoa2.getAltura()) {
+            System.out.println(pessoa1.getNome() + " é mais alto(a) que " + pessoa2.getNome());
+        } else {
+            System.out.println(pessoa2.getAltura() + " é mais alto(a) que " + pessoa1.getNome());
         }
     }
 }
