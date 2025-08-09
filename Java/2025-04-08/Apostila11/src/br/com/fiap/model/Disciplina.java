@@ -3,13 +3,18 @@ package br.com.fiap.model;
 public class Disciplina {
 
     private String nome;
-    private int cargaHoraria;
     private String categoria;
+    private int cargaHoraria;
 
-    public Disciplina(String nome, int cargaHoraria, String categoria) {
+    public Disciplina(String nome, String categoria, int cargaHoraria) {
         this.nome = nome;
-        this.cargaHoraria = cargaHoraria;
         this.categoria = categoria;
+        this.cargaHoraria = cargaHoraria;
+    }
+
+    @Override
+    public String toString() {
+        return nome + " - " + categoria + " - " + cargaHoraria + " horas";
     }
 
     public String getNome() {
