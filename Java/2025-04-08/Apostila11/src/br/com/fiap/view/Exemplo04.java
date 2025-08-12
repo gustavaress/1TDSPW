@@ -25,10 +25,11 @@ public class Exemplo04 {
         Set<String> chaves = estado.keySet();
 
         //Laço para percorrer todas as chaves
-        for (chavesEstados : estado){
-            System.out.println(chaves);
+        for (String sigla : chaves){
+            String nome = estado.get(sigla);
+            
+            //Exibir a chave do valor
+            System.out.println(sigla + " - " + nome);
         }
-
-        //Exibir a chave e o valor
     }
 }
